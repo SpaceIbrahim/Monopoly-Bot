@@ -1,4 +1,7 @@
 import discord
+import os
+
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 async def send_message(message, user_message):
     try:
