@@ -1,0 +1,163 @@
+[
+    {
+        "name": "GO",
+        "position": 0,
+        "attribute": "GO",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Med Avenue",
+        "position": 1,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 2,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Baltic Avenue",
+        "position": 3,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Income Tax",
+        "position": 4,
+        "attribute": "tax",
+        "players": [],
+        "owner": "none"
+    },
+    {
+        "name": "Reading Railroad",
+        "position": 5,
+        "attribute": "railroad",
+        "players": [],
+        "owner": "none",
+        "rent": [25]
+    },
+    {
+        "name": "Oriental Avenue",
+        "position": 6,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [6, 12, 30, 90, 270, 400, 550],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 7,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Vermount Avenue",
+        "position": 8,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [6, 12, 30, 90, 270, 400, 550],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Connecticut Avenue",
+        "position": 9,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [8, 16, 40, 100, 300, 450, 600],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Just Visiting Jail",
+        "position": 10,
+        "attribute": "jail",
+        "players": [],
+        "inJail": []
+    },
+    {
+        "name": "Baltic Avenue",
+        "position": 11,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Baltic Avenue",
+        "position": 12,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Electric Company",
+        "position": 13,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Baltic Avenue",
+        "position": 14,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Penny Railroad",
+        "position": 15,
+        "attribute": "railroad",
+        "players": [],
+        "owner": "none",
+        "rent": [25]
+    },
+    {
+        "name": "Baltic Avenue",
+        "position": 16,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    }
+]
