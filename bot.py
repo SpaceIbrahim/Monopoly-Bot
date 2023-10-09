@@ -1,9 +1,9 @@
 import discord
 import os
 import dotenv
+
 dotenv.load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-print(TOKEN)
 
 async def send_message(message, user_message):
     try:
@@ -19,13 +19,13 @@ def run_discord_bot():
 
     @client.event
     async def on_ready():
-        
         print(f"{client.user} is now running")
 
     
 
     @client.event
     async def on_message(message):
+        
         if message.author == client.user:
             return
         
