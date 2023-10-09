@@ -1,7 +1,9 @@
 import discord
 import os
-
+import dotenv
+dotenv.load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+print(TOKEN)
 
 async def send_message(message, user_message):
     try:
