@@ -1,7 +1,10 @@
-PROPERTIES = []
-
+import json
 class Board:
     def __init__(self):
-        pass
+        with open 
+        self.x = json.load('cards.json')
     def poop(self):
         print("poop")
+
+board = Board()
+print(board.x)
