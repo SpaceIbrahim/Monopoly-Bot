@@ -98,45 +98,42 @@
         "inJail": []
     },
     {
-        "name": "Baltic Avenue",
+        "name": "ST. Charles Place",
         "position": 11,
         "attribute": "property",
         "players": [],
         "owner": "none",
-        "rent": [4, 8, 20, 60, 180, 320, 450],
-        "color_set": false,
-        "houses": 0,
-        "hotels": 0 
-    },
-    {
-        "name": "Baltic Avenue",
-        "position": 12,
-        "attribute": "property",
-        "players": [],
-        "owner": "none",
-        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "rent": [10, 20, 50, 150, 450, 625, 750],
         "color_set": false,
         "houses": 0,
         "hotels": 0 
     },
     {
         "name": "Electric Company",
+        "position": 12,
+        "attribute": "utility",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 10]
+    },
+    {
+        "name": "States Avenue",
         "position": 13,
         "attribute": "property",
         "players": [],
         "owner": "none",
-        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "rent": [10, 20, 50, 150, 450, 625, 750],
         "color_set": false,
         "houses": 0,
         "hotels": 0 
     },
     {
-        "name": "Baltic Avenue",
+        "name": "Virginia Avenue",
         "position": 14,
         "attribute": "property",
         "players": [],
         "owner": "none",
-        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "rent": [12, 24, 60, 180, 500, 700, 900],
         "color_set": false,
         "houses": 0,
         "hotels": 0 
@@ -150,14 +147,240 @@
         "rent": [25]
     },
     {
-        "name": "Baltic Avenue",
+        "name": "ST. Charles Place",
         "position": 16,
         "attribute": "property",
         "players": [],
         "owner": "none",
-        "rent": [4, 8, 20, 60, 180, 320, 450],
+        "rent": [14, 28, 70, 200, 550, 750, 950],
         "color_set": false,
         "houses": 0,
         "hotels": 0 
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 17,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Tennessee Avenue",
+        "position": 18,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [14, 28, 70, 200, 550, 750, 950],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "New York Avenue",
+        "position": 19,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [16, 32, 80, 220, 600, 800, 1000],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Free Parking",
+        "position": 20,
+        "attribute": "Free Parking",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Kentucky Avenue",
+        "position": 21,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [18, 36, 90, 250, 700, 875, 1050],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 22,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Indiana Avenue",
+        "position": 23,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [18, 36, 90, 250, 700, 875, 1050],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Illinois Avenue",
+        "position": 24,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [20, 40, 100, 300, 750, 920, 1100],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "B.B.Q Railroad",
+        "position": 25,
+        "attribute": "railroad",
+        "players": [],
+        "owner": "none",
+        "rent": [25]
+    },
+    {
+        "name": "Atlantic Avenue",
+        "position": 26,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [22, 44, 110, 330, 800, 975, 1150],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Ventnor Avenue",
+        "position": 27,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [22, 44, 110, 330, 800, 975, 1150],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Water Company",
+        "position": 28,
+        "attribute": "utility",
+        "players": [],
+        "owner": "none",
+        "rent": [4, 10]
+    },
+    {
+        "name": "Marvin Gardens",
+        "position": 29,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [24, 48, 120, 360, 850, 1025, 1200],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0 
+    },
+    {
+        "name": "Got To Jail",
+        "position": 30,
+        "attribute": "Go Jail",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Pacific Avenue",
+        "position": 31,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [26, 52, 130, 390, 900, 1100, 1275],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0,
+        "price": 300,
+        "house_price": 200
+    },
+    {
+        "name": "North Carolina Avenue",
+        "position": 32,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [26, 52, 130, 390, 900, 1100, 1275],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0,
+        "price": 300,
+        "house_price": 200
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 33,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Pennsylvania Avenue",
+        "position": 34,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [28, 56, 150, 450, 1000, 1200, 1400],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0,
+        "price": 320,
+        "house_price": 200
+    },
+    {
+        "name": "Short Line Railroad",
+        "position": 35,
+        "attribute": "railroad",
+        "players": [],
+        "owner": "none",
+        "rent": [25]
+    },
+    {
+        "name": "Lucky Cube",
+        "position": 36,
+        "attribute": "guess",
+        "players": [],
+        "owner": "N/A"
+    },
+    {
+        "name": "Park Place",
+        "position": 37,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [35, 70, 175, 500, 1100, 1300, 1500],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0,
+        "price": 350,
+        "house_price": 200
+    },
+    {
+        "name": "Income Tax",
+        "position": 38,
+        "attribute": "tax",
+        "players": [],
+        "owner": "none"
+    },
+    {
+        "name": "Broadwalk",
+        "position": 39,
+        "attribute": "property",
+        "players": [],
+        "owner": "none",
+        "rent": [50, 100, 200, 600, 1400, 1700, 2000],
+        "color_set": false,
+        "houses": 0,
+        "hotels": 0,
+        "price": 400,
+        "house_price": 200
     }
 ]

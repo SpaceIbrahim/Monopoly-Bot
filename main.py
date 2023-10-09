@@ -18,5 +18,6 @@ if __name__ == '__main__':
 
     print(player2.properties)
     print(player2.money)
+    print([1,2] == [2,1])
 
 
