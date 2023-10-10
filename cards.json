@@ -17,7 +17,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 60,
-        "house_price": 50
+        "house_price": 50,
+        "color": "brown"
     },
     {
         "name": "Lucky Cube",
@@ -37,7 +38,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 60,
-        "house_price": 50
+        "house_price": 50,
+        "color": "brown"
     },
     {
         "name": "Income Tax",
@@ -65,7 +67,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 100,
-        "house_price": 50
+        "house_price": 50,
+        "color": "light_blue"
     },
     {
         "name": "Lucky Cube",
@@ -85,7 +88,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 100,
-        "house_price": 50
+        "house_price": 50,
+        "color": "light_blue"
     },
     {
         "name": "Connecticut Avenue",
@@ -98,7 +102,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 120,
-        "house_price": 50
+        "house_price": 50,
+        "color": "light_blue"
     },
     {
         "name": "Just Visiting Jail",
@@ -118,7 +123,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 140,
-        "house_price": 100
+        "house_price": 100,
+        "color": "pink"
     },
     {
         "name": "Electric Company",
@@ -139,7 +145,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 140,
-        "house_price": 100
+        "house_price": 100,
+        "color": "pink"
     },
     {
         "name": "Virginia Avenue",
@@ -152,7 +159,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 160,
-        "house_price": 100
+        "house_price": 100,
+        "color": "pink"
     },
     {
         "name": "Penny Railroad",
@@ -173,7 +181,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 180,
-        "house_price": 100 
+        "house_price": 100,
+        "color": "orange" 
     },
     {
         "name": "Lucky Cube",
@@ -193,7 +202,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 180,
-        "house_price": 100
+        "house_price": 100,
+        "color": "orange"
     },
     {
         "name": "New York Avenue",
@@ -206,7 +216,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 200,
-        "house_price": 100
+        "house_price": 100,
+        "color": "orange"
     },
     {
         "name": "Free Parking",
@@ -226,7 +237,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 220,
-        "house_price": 150
+        "house_price": 150,
+        "color": "red"
     },
     {
         "name": "Lucky Cube",
@@ -246,7 +258,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 220,
-        "house_price": 150
+        "house_price": 150,
+        "color": "red"
     },
     {
         "name": "Illinois Avenue",
@@ -259,7 +272,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 240,
-        "house_price": 150
+        "house_price": 150,
+        "color": "red"
     },
     {
         "name": "B.B.Q Railroad",
@@ -280,7 +294,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 260,
-        "house_price": 150 
+        "house_price": 150,
+        "color": "yellow" 
     },
     {
         "name": "Ventnor Avenue",
@@ -293,7 +308,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 260,
-        "house_price": 150
+        "house_price": 150,
+        "color": "yellow"
     },
     {
         "name": "Water Company",
@@ -314,7 +330,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 280,
-        "house_price": 150
+        "house_price": 150,
+        "color": "yellow"
     },
     {
         "name": "Got To Jail",
@@ -334,7 +351,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 300,
-        "house_price": 200
+        "house_price": 200,
+        "color": "green"
     },
     {
         "name": "North Carolina Avenue",
@@ -347,7 +365,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 300,
-        "house_price": 200
+        "house_price": 200,
+        "color": "green"
     },
     {
         "name": "Lucky Cube",
@@ -367,7 +386,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 320,
-        "house_price": 200
+        "house_price": 200,
+        "color": "green"
     },
     {
         "name": "Short Line Railroad",
@@ -395,7 +415,8 @@
         "houses": 0,
         "hotels": 0,
         "price": 350,
-        "house_price": 200
+        "house_price": 200,
+        "color": "dark_blue"
     },
     {
         "name": "Income Tax",
@@ -415,6 +436,7 @@
         "houses": 0,
         "hotels": 0,
         "price": 400,
-        "house_price": 200
+        "house_price": 200,
+        "color": "dark_blue"
     }
 ]

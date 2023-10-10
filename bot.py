@@ -1,45 +1,43 @@
 import discord
 import os
 import dotenv
+from discord.ext import commands
+
+from monopoly import Monopoly
 
 dotenv.load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-async def send_message(message, user_message):
-    try:
-        await message.channel.send("AAAAAAAA")
-    except Exception as e:
-        print(e)
-
 def run_discord_bot():
-    
     intents = discord.Intents.default()
     intents.message_content = True
-    client = discord.Client(intents=intents)
+    # client = discord.Client(intents=intents)
+    monopoly = Monopoly(0, [], [])
+    playerNum = 0
+    client = commands.Bot(command_prefix='`', intents=intents)
 
     @client.event
     async def on_ready():
         print(f"{client.user} is now running")
 
-    
+    @client.command()
+    async def test(ctx, arg):
+        await ctx.send(arg)
 
-    @client.event
-    async def on_message(message):
-        
-        if message.author == client.user:
-            return
-        
-        username = str(message.author)
-        user_message = str(message.content)
-        channel = str(message.channel)
+    @client.command()
+    async def play(ctx):
+        await ctx.send("Let's Play Monopoly!\nfdsfdsfdsf")
 
-        print(f"{username} said {user_message} on {channel}")
-        # await message.channel.send("AAAAAAAA")
+    # @client.command()
+    # async def join(ctx):
+    #     await ctx.send(f"{ctx.author}")
 
-        if user_message == "balls":
-            await message.channels.send()
-
+    @client.command(pass_context=True)
+    async def name(ctx):
+        username = ctx.message.author.name
+        print(username)
     
     client.run(TOKEN)
 
-    
+
+run_discord_bot()

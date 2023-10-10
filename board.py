@@ -1,10 +1,13 @@
 import json
 class Board:
     def __init__(self):
-        with open 
-        self.x = json.load('cards.json')
-    def poop(self):
-        print("poop")
+        with open('cards.json', 'r') as f:
+            self.cards = json.load(f)
+        
+    def getLocation(self, n):
+        return self.cards[n]
 
-board = Board()
-print(board.x)
+# board = Board()
+# for i in board.cards:
+#     if 'color' in i:
+#         print(i['color'])
