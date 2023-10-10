@@ -19,17 +19,19 @@ class Monopoly():
         
         roll = self.rollDie()
 
-        if self.turn == self.numPlayers:
+        if self.turn == self.numPlayers -1:
             self.turn = 0
         else:
             self.turn +=1
 
+        print(t,"\n\n\n\n")
         self.players[t].move(roll)
         loc = self.players[t].location
         if loc >= 40:
             self.players[t].location = loc - 40
             loc -= 40
 
+        self.board.createBoard(self.players)
         outString = f"It's player {self.players[t].name}'s turn and they roll a {roll}! They landed on {self.board.getLocation(loc)['name']}"
         return [outString, self.board.getLocation(loc)]
     

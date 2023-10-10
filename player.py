@@ -120,5 +120,5 @@ class Player:
         return True
     
     def playerInfo(self):
-        return f"{self.name} with the symbol of {self.symbol} is at {self.cards[0]['name']} and has ${self.money}"
+        return f"{self.name} with the symbol of {self.symbol} is at {self.cards[self.location]['name']} and has ${self.money}"
     

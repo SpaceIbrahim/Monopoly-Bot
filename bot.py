@@ -79,12 +79,14 @@ async def start(ctx):
 @client.command(pass_context=True)
 async def turn(ctx):
     username = ctx.message.author.name
-    if(username != monopoly.players[monopoly.turn-1].name):
-        await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
-        return None
-    await ctx.send(file=discord.File('images/out.png'))
-    await ctx.send(monopoly.doTurn()[0])
+
+    # print(monopoly.turn)
+    # if(username != monopoly.players[].name):
+    #     await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
+    #     return None
     
+    await ctx.send(monopoly.doTurn()[0])
+    await ctx.send(file=discord.File('images/out.png'))
     
 # @client.command()
 # async def epic(ctx):

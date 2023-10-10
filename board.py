@@ -9,6 +9,6 @@ class Board:
     def getLocation(self, n):
         return self.cards[n]
     
-    def createBoard(players):
-        imager = Imager(players)
-        imager.createBoard()
+    def createBoard(self, players):
+        imager = Imager()
+        imager.creatBoard(players)
