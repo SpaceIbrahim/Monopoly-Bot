@@ -3,13 +3,16 @@ from board import Board
 from random import randint
 
 class Monopoly():
-    def __init__(self, num, names, symbol) -> None:
+
+    def __init__(self) -> None:
         self.turn = 0
-        self.numPlayers = num-1
+        self.numPlayers = 0
         self.board = Board()
         self.players = []
-        for i in range(num):
-            self.players.append(Player(names[i], symbol[i]))
+
+    def addPlayers(self, name, symbol):
+        self.players.append(Player(name, symbol))
+        self.numPlayers += 1
 
     def doTurn(self):
         t = self.turn
@@ -35,7 +38,7 @@ class Monopoly():
             print(f"{i.name} with the symbol of {i.symbol}")
 
     def rollDie(self) -> int:
+
         return randint(1, 12)
     
-m = Monopoly(1, ["ibbi"], ["🦆"])
-m.doTurn()
+    

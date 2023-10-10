@@ -1,4 +1,6 @@
 import json
+from imager import Imager
+
 class Board:
     def __init__(self):
         with open('cards.json', 'r') as f:
@@ -6,8 +8,7 @@ class Board:
         
     def getLocation(self, n):
         return self.cards[n]
-
-# board = Board()
-# for i in board.cards:
-#     if 'color' in i:
-#         print(i['color'])
+    
+    def createBoard(players):
+        imager = Imager(players)
+        imager.createBoard()
