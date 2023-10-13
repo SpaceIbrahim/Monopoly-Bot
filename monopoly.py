@@ -82,8 +82,8 @@ class Monopoly():
             pass
     
     def buy(self, player, location):
-        if self.players.buy(player, location):
-            
+        if self.players[player].buy(location):
+            self.board.addOwner(location['position'], player)
             return "purchase successful"
         else:
             return "you are broke"

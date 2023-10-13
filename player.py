@@ -43,7 +43,7 @@ class Player:
         self.location += die_roll
         return self.location
     
-    def buy(self, property, price):
+    def buy(self, location):
         """
         Buys a property for the specified price if the player has enough money.
 
@@ -54,11 +54,11 @@ class Player:
         Returns:
         - True if the property was bought successfully, False otherwise.
         """
-        if(price > self.money):
+        if(location['house_price'] > self.money):
             return False
         else:
-            self.money -= price
-            self.properties.append(property['name'])
+            self.money -= location['house_price'] 
+            self.properties.append(location['name'])
             return True
     
     def sell(self, property, price):

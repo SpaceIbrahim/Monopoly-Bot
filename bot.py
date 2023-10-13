@@ -66,7 +66,7 @@ async def players(ctx):
         await ctx.send(f"{playerName[i]} with the symbol of {playerSymbol[i]}")
 
 @client.command(pass_context=True)
-async def playernfo(ctx):
+async def playerinfo(ctx):
     username = ctx.message.author.name
     if(username not in playerName):
         await ctx.send("Player not in game")
@@ -131,7 +131,7 @@ async def buy(ctx):
         await ctx.send(f"It's {monopoly.players[player_turn].name}'s turn")
         return None
     out = monopoly.buy(player_turn, player_loc)
-    await ctx.send(out[0])
+    await ctx.send(out)
 
     
     

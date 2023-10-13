@@ -9,6 +9,9 @@ class Board:
     def getLocation(self, n):
         return self.cards[n]
     
+    def addOwner(self, n, owner):
+        self.cards[n]['owner'] = owner
+        
     def createBoard(self, players):
         imager = Imager()
         imager.creatBoard(players)
