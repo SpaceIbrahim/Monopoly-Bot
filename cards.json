@@ -54,7 +54,8 @@
         "attribute": "railroad",
         "players": [],
         "owner": "none",
-        "rent": [25]
+        "rent": [25],
+        "house_price": 200
     },
     {
         "name": "Oriental Avenue",
@@ -67,7 +68,7 @@
         "houses": 0,
         "hotels": 0,
         "price": 100,
-        "house_price": 50,
+        "house_price": 60,
         "color": "light_blue"
     },
     {
@@ -88,7 +89,7 @@
         "houses": 0,
         "hotels": 0,
         "price": 100,
-        "house_price": 50,
+        "house_price": 60,
         "color": "light_blue"
     },
     {
@@ -102,7 +103,7 @@
         "houses": 0,
         "hotels": 0,
         "price": 120,
-        "house_price": 50,
+        "house_price": 80,
         "color": "light_blue"
     },
     {
@@ -132,7 +133,8 @@
         "attribute": "utility",
         "players": [],
         "owner": "none",
-        "rent": [4, 10]
+        "rent": [4, 10],
+        "house_price": 200
     },
     {
         "name": "States Avenue",
@@ -168,7 +170,8 @@
         "attribute": "railroad",
         "players": [],
         "owner": "none",
-        "rent": [25]
+        "rent": [25],
+        "house_price": 200
     },
     {
         "name": "ST. Charles Place",
@@ -281,7 +284,8 @@
         "attribute": "railroad",
         "players": [],
         "owner": "none",
-        "rent": [25]
+        "rent": [25],
+        "house_price": 200
     },
     {
         "name": "Atlantic Avenue",
@@ -317,7 +321,8 @@
         "attribute": "utility",
         "players": [],
         "owner": "none",
-        "rent": [4, 10]
+        "rent": [4, 10],
+        "house_price": 200
     },
     {
         "name": "Marvin Gardens",
@@ -334,9 +339,9 @@
         "color": "yellow"
     },
     {
-        "name": "Got To Jail",
+        "name": "Go To Jail",
         "position": 30,
-        "attribute": "Go Jail",
+        "attribute": "go jail",
         "players": [],
         "owner": "N/A"
     },
@@ -395,7 +400,8 @@
         "attribute": "railroad",
         "players": [],
         "owner": "none",
-        "rent": [25]
+        "rent": [25],
+        "house_price": 200
     },
     {
         "name": "Lucky Cube",

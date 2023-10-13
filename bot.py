@@ -20,6 +20,8 @@ playerName = []
 playerSymbol = []
 symbols = ["penguin", "alien", "robot", "unicorn"]
 start = [False]
+player_turn = 0
+player_loc = {}
 @client.event
 async def on_ready():
     print(f"{client.user} is now running")
@@ -64,7 +66,7 @@ async def players(ctx):
         await ctx.send(f"{playerName[i]} with the symbol of {playerSymbol[i]}")
 
 @client.command(pass_context=True)
-async def playerInfo(ctx):
+async def playernfo(ctx):
     username = ctx.message.author.name
     if(username not in playerName):
         await ctx.send("Player not in game")
@@ -79,14 +81,59 @@ async def start(ctx):
 @client.command(pass_context=True)
 async def turn(ctx):
     username = ctx.message.author.name
-
-    # print(monopoly.turn)
-    # if(username != monopoly.players[].name):
-    #     await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
-    #     return None
+    global player_turn, player_loc
+    player_turn = monopoly.turn
+    if(username != monopoly.players[monopoly.turn].name):
+        await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
+        return None
     
-    await ctx.send(monopoly.doTurn()[0])
+    out = monopoly.doTurn()
+    await ctx.send(out[0])
     await ctx.send(file=discord.File('images/out.png'))
+    loc = out[1]
+    output = monopoly.location_landed(loc)
+    player_loc = output[0]
+
+    match output[1]:
+        case 0:
+            await ctx.send(f"{out[2]} {output[2]}")
+
+            await ctx.send(f"$200 has been removed from {out[2]}")
+        case 1:
+            await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
+        case 2:
+            await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
+        case 3:
+            await ctx.send(f"{out[2]} {output[2]}")
+            # Collect $200
+        case 4:
+            await ctx.send(f"{out[2]} {output[2]}")
+            # Go Jail
+        case 5:
+            await ctx.send(f"{out[2]} {output[2]}")
+        case 6:
+            await ctx.send(f"{out[2]} {output[2]}")
+        case 7:
+            await ctx.send(f"{out[2]} {output[2]}")
+            # Random
+        case 8:
+            await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
+        case 9:
+            await ctx.send(f"{out[2]} {output[2]}")
+        case _:
+            pass
+
+@client.command(pass_context=True)
+async def buy(ctx):
+    global player_turn, player_loc
+    username = ctx.message.author.name
+    if(username != monopoly.players[player_turn].name):
+        await ctx.send(f"It's {monopoly.players[player_turn].name}'s turn")
+        return None
+    out = monopoly.buy(player_turn, player_loc)
+    await ctx.send(out[0])
+
+    
     
 # @client.command()
 # async def epic(ctx):

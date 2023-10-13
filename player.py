@@ -58,7 +58,7 @@ class Player:
             return False
         else:
             self.money -= price
-            self.properties.append(property)
+            self.properties.append(property['name'])
             return True
     
     def sell(self, property, price):
@@ -77,7 +77,7 @@ class Player:
             self.properties.remove(property)
             return True
         else:
-            return False
+            return False 
         
     def trade(self, player,get, price_get,price_give, give):
         """
