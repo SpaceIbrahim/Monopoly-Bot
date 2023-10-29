@@ -14,15 +14,16 @@ class Monopoly():
         self.players.append(Player(name, symbol))
         self.numPlayers += 1
 
-    def doTurn(self):
-        t = self.turn
-        
-        roll = self.rollDie()
-
+    def endTrun(self):
         if self.turn == self.numPlayers -1:
             self.turn = 0
         else:
             self.turn +=1
+    
+    def doTurn(self):
+        t = self.turn
+        
+        roll = self.rollDie()
 
         # print(t,"\n\n\n\n")
         self.players[t].move(roll)
