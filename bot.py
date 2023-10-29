@@ -105,7 +105,7 @@ async def turn(ctx):
 
             await ctx.send(f"$200 has been removed from {out[2]}")
         case 1:
-            await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
+            await ctx.send(f"{out[2]} {output[2]}")
         case 2:
             await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
         case 3:

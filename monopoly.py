@@ -23,7 +23,7 @@ class Monopoly():
     def doTurn(self):
         t = self.turn
         
-        roll = self.rollDie()
+        roll = 5
 
         # print(t,"\n\n\n\n")
         self.players[t].move(roll)
@@ -43,12 +43,22 @@ class Monopoly():
             return [location, 0, str]
         
         elif location['attribute'] == 'railroad':
-            str = (f"landed on {location['name']} the price of this railroad is {location['house_price']}")
-            return [location, 1, str]
+            if location['owner'] == 'none':
+                str =(f"landed on {location['name']} the price of this railroad is {location['house_price']} ``buy` to buy or ``end` to end turn")
+                return [location, 1, str]
+            
+            else:
+                str = (f"landed on {location['name']} and is owned by {location['owner']}, they must pay {location['owner']} rent `pay to pay the rent")
+                return [location, 1, str]
         
         elif location['attribute'] == 'utility':
-            str = (f"landed on {location['name']} the price of this utility is {location['house_price']}")
-            return [location, 2, str]
+            if location['owner'] == 'none':
+                str =(f"landed on {location['name']} the price of this utility is {location['house_price']} ``buy` to buy or ``end` to end turn")
+                return [location, 2, str]
+            
+            else:
+                str = (f"landed on {location['name']} and is owned by {location['owner']}, they must pay {location['owner']} rent `pay to pay the rent")
+                return [location, 2, str]
         
         elif location['attribute'] == 'GO':
             str =(f"passed GO collect $200")
