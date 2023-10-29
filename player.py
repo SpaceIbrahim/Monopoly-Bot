@@ -29,6 +29,29 @@ class Player:
         self.utility = 0
         self.inJail = False
         self.money = 1500
+        self.set = {
+            "brown": 0,
+            "light_blue": 0,
+            "pink": 0,
+            "orange": 0,
+            "red": 0,
+            "yellow": 0,
+            "green": 0,
+            "dark_blue": 0,
+            "railroad": 0,
+            "utility": 0
+        }
+
+        self.house = {
+            "brown": 0,
+            "light_blue": 0,
+            "pink": 0,
+            "orange": 0,
+            "red": 0,
+            "yellow": 0,
+            "green": 0,
+            "dark_blue": 0
+        }
 
     def move(self, die_roll):
         """
@@ -59,8 +82,30 @@ class Player:
         else:
             self.money -= location['house_price'] 
             self.properties.append(location['name'])
+            if location['attribute'] == 'railroad':
+                self.railroads += 1
+            elif location['attribute'] == 'utility':
+                self.utility += 1
+            else:
+                self.set[location['color']] += 1
             return True
     
+    def buyhouse(self, location):
+        if location['color'] == "brown" or location['color'] == "dark_blue":
+            if self.set[location['color']] == 2:
+                if self.money > location['house_price'] and self.house[location['color']] < 4:
+                    self.money -= location['house_price']
+                    self.house[location['color']] += 1
+                    return True  
+            else:
+                return False
+        else:
+            if self.set[location['color']] == 3:
+                self.money -= location['house_price']
+                return True
+            else:
+                return False
+        
     def sell(self, property, price):
         """
         Sells a property for the specified price if the player owns it.
@@ -79,45 +124,45 @@ class Player:
         else:
             return False 
         
-    def trade(self, player,get, price_get,price_give, give):
-        """
-        Trades properties and money between two players.
+    # def trade(self, player,get, price_get,price_give, give):
+    #     """
+    #     Trades properties and money between two players.
 
-        Args:
-        - player (Player): The player to trade with.
-        - get (list): A list of properties to get from the other player.
-        - price_get (int): The amount of money to give to the other player for their properties.
-        - price_give (int): The amount of money to receive from the other player for your properties.
-        - give (list): A list of properties to give to the other player.
+    #     Args:
+    #     - player (Player): The player to trade with.
+    #     - get (list): A list of properties to get from the other player.
+    #     - price_get (int): The amount of money to give to the other player for their properties.
+    #     - price_give (int): The amount of money to receive from the other player for your properties.
+    #     - give (list): A list of properties to give to the other player.
 
-        Returns:
-        - True if the trade was successful, False otherwise.
-        """
-        for i in give:
-            if i not in self.properties:
-                return False
-        for i in get:
-            if i not in player.properties:
-                return False
+    #     Returns:
+    #     - True if the trade was successful, False otherwise.
+    #     """
+    #     for i in give:
+    #         if i not in self.properties:
+    #             return False
+    #     for i in get:
+    #         if i not in player.properties:
+    #             return False
         
-        # if the money player has is less than the difference between the money you give and get
-        if self.money < price_get - price_give or player.money < price_give - price_get:
-            return False
+    #     # if the money player has is less than the difference between the money you give and get
+    #     if self.money < price_get - price_give or player.money < price_give - price_get:
+    #         return False
         
-        for i in give:
-            player.properties.append(i)
-            self.properties.remove(i)
-        for i in get:
-            self.properties.append(i)
-            player.properties.remove(i)
+    #     for i in give:
+    #         player.properties.append(i)
+    #         self.properties.remove(i)
+    #     for i in get:
+    #         self.properties.append(i)
+    #         player.properties.remove(i)
 
-        self.money -= price_give
-        self.money += price_get
+    #     self.money -= price_give
+    #     self.money += price_get
 
-        player.money -= price_get
-        player.money += price_give
+    #     player.money -= price_get
+    #     player.money += price_give
         
-        return True
+    #     return True
     
     def playerInfo(self):
         return f"{self.name} with the symbol of {self.symbol} is at {self.cards[self.location]['name']} and has ${self.money}\n{self.properties} "

@@ -38,6 +38,7 @@ class Monopoly():
         return [outString, self.board.getLocation(loc), self.players[t].name]
     
     def location_landed(self,location):
+        location = self.board.getLoc(location['name'])
         if location['attribute'] == 'tax':
             str = f"landed on {location['name']} they must pay $200 in taxes to the IRS"
             return [location, 0, str]
@@ -48,7 +49,7 @@ class Monopoly():
                 return [location, 1, str]
             
             else:
-                str = (f"landed on {location['name']} and is owned by {location['owner']}, they must pay {location['owner']} rent `pay to pay the rent")
+                str = (f"landed on {location['name']} and is owned by {location['owner']}, they must pay ${self.board.rent(location, self.players[self.turn])} in rent `pay to pay the rent")
                 return [location, 1, str]
         
         elif location['attribute'] == 'utility':
@@ -93,9 +94,17 @@ class Monopoly():
             pass
     
     def buy(self, player, location):
+        print(location)
         if self.players[player].buy(location):
-            self.board.addOwner(location['position'], player)
+            self.board.addOwner(location['position'], self.players[player].name)
+            # print(self.board.getLocation(location['position']))
             return "purchase successful"
+        else:
+            return "you are broke"
+    
+    def pay(self, player, location):
+        if self.players[player].pay(location):
+            return "payment successful"
         else:
             return "you are broke"
     def showPlayers(self):

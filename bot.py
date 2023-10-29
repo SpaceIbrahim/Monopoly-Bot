@@ -35,8 +35,9 @@ async def play(ctx):
 @client.command()
 async def start(ctx):
     global game_start
-    game_start = [True]
+    
     if len(playerName) != 0:
+        game_start = [True]
         await ctx.send("Game has started")
         await ctx.send(f"It's {monopoly.players[0].name}'s turn. Enter ''turn' to roll the die.")
     else:
@@ -107,7 +108,7 @@ async def turn(ctx):
         case 1:
             await ctx.send(f"{out[2]} {output[2]}")
         case 2:
-            await ctx.send(f"{out[2]} {output[2]}, ``buy` to buy or ``end` to end turn")
+            await ctx.send(f"{out[2]} {output[2]}")
         case 3:
             await ctx.send(f"{out[2]} {output[2]}")
             # Collect $200
@@ -134,9 +135,19 @@ async def buy(ctx):
     if(username != monopoly.players[monopoly.turn].name):
         await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
         return None
+    
     out = monopoly.buy(monopoly.turn, player_loc)
     await ctx.send(out)
 
+@client.command(pass_context=True)
+async def pay(ctx):
+    username = ctx.message.author.name
+    if(username != monopoly.players[monopoly.turn].name):
+        await ctx.send(f"It's {monopoly.players[monopoly.turn].name}'s turn")
+        return None
+    
+    out = monopoly.pay(monopoly.turn, player_loc)
+    await ctx.send(out)
 
 @client.command(pass_context=True)
 async def end(ctx):
